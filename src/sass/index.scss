@@ -1,6 +1,8 @@
 $bg-color: #1f242d;
 $text-color: #fff;
 $main-color: #0ef;
+$second-color:#551A8B;
+$second-bg-color: #323946;
 
 *{
     margin: 0;
@@ -19,6 +21,15 @@ html {
 body {
     background-color: $bg-color;
     color: $text-color;
+}
+
+section {
+    min-height: 100vh;
+    padding: 3.8rem 9% 2rem;
+}
+
+span {
+    color: $main-color;
 }
 
 .header{
@@ -77,3 +88,76 @@ nav{
         }
     }
 }
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    .home_img {
+        img{
+            width: 35vw;
+            border-radius: 50%;
+        }
+    }
+
+    .home_content {
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            padding-top: 1rem;
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.5;
+            text-shadow: 3px 3px 3px $second-color;
+        }
+        p {
+            font-size: 1.6rem;
+            text-align: justify;
+        }
+    }
+
+    .social_media {
+        a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            background: transparent;
+            border: 0.2rem solid $main-color;
+            border-radius: 50%;
+            font-size: 2rem;
+            color: $main-color;
+            margin: 2rem 1.5rem 2rem 0;
+            transition: 0.5s ease;
+
+            &:hover {
+                background: $main-color;
+                color: $second-bg-color;
+                box-shadow: 0 0 1rem $main-color;
+            }
+        }
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 1rem 2.8rem;
+        background: $main-color;
+        border-radius: 4rem;
+        box-shadow: 0 0 1rem $main-color;
+        font-size: 1.6rem;
+        color: $second-bg-color;
+        letter-spacing: 0.1rem;
+        font-weight: 600;
+        transition: 0.3s ease;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}
+
