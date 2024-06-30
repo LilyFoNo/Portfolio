@@ -161,3 +161,66 @@ nav{
     }
 }
 
+.about {
+    background-color: $second-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.heading {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 3px 3px 3px $second-color
+}
+.about_content{
+    h2 {
+        text-align: left;
+        line-height: 1.2;
+    }
+    h3 {
+        font-size: 2.6rem;
+        padding-top: 1rem;
+    }
+    p {
+        font-size: 1.6rem;
+        margin: 2rem 0 3rem;
+        text-align: justify;
+    }
+}
+.text {
+    h2 {
+        font-size: 2.6rem;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        font-size: 4.5rem;
+        text-shadow: 3px 3px 3px $second-color
+    }
+}
+.skills {
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background: transparent;
+        border: 0.2rem solid $main-color;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: $main-color;
+        margin: 1rem 0 1rem 0;
+        transition: 0.5s ease;
+
+        &:hover{
+            background: $main-color;
+            color: $second-bg-color;
+            box-shadow: 0 0 1rem $main-color;
+        }
+    }
+    img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
