@@ -224,3 +224,56 @@ nav{
         height: 3.5rem;
     }
 }
+
+.projects {
+    h2 {
+        margin-bottom: 2rem;
+    }
+    .projects_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 2rem;
+        .projects_box {
+            position: relative;
+            border-radius: 2rem;
+            box-shadow: 0 0 1rem $second-bg-color;
+            overflow: hidden;
+            display: flex;
+            video {
+                width: 100%;
+                transition: 0.5s ease;
+            }
+            &:hover video {
+                transform: scale(1.1);
+            }
+            .project_layer {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.1), $main-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                padding: 0 4rem;
+                transform: translateY(100%);
+                transition: 0.5s ease;
+                h4 {
+                    padding-bottom: 7rem;
+                    font-size: 1rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                    margin:  0.3rem 0 1rem;
+                }
+            }
+            &:hover .project_layer{
+                transform: translateY(70%);
+            }
+        }
+    }
+}
