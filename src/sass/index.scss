@@ -318,3 +318,51 @@ nav{
         }
     }
 }
+
+.contact {
+    form{
+        max-width: 50rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+        .input_box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        input,
+        textarea {
+            width: 100%;
+            padding: 1.5rem;
+            font-size: 1.6rem;
+            color: $text-color;
+            background-color: $second-bg-color;
+            border-radius: 0.9rem;
+            margin: 0.5rem 0;
+        }
+        input {
+            width: 49%;
+        }
+        textarea {
+            resize: none;
+            height: 50%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: $main-color;
+            border-radius: 4rem;
+            box-shadow: 0 0 1rem $main-color;
+            font-size: 1.6rem;
+            color: $second-bg-color;
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            transition: 0.3s ease;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+}

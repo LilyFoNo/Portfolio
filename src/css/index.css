@@ -288,4 +288,50 @@ nav a:hover span {
   font-size: 1rem;
 }
 
+.contact form {
+  max-width: 50rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contact form .input_box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #323946;
+  border-radius: 0.9rem;
+  margin: 0.5rem 0;
+}
+.contact form input {
+  width: 49%;
+}
+.contact form textarea {
+  resize: none;
+  height: 50%;
+}
+.contact form .btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #0ef;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem #0ef;
+  font-size: 1.6rem;
+  color: #323946;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.contact form .btn:hover {
+  box-shadow: none;
+}
+
 /*# sourceMappingURL=index.css.map */
