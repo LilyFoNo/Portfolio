@@ -277,3 +277,44 @@ nav{
         }
     }
 }
+
+.work {
+    background-color: $second-bg-color;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+    .work_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .work_box {
+            margin-top: 2rem;
+            box-shadow: 0 0 1rem $bg-color;
+            background: $bg-color;
+            padding: 2rem 2rem 2rem;
+            border-radius: 2rem;
+            text-align: center;
+            border: 0.2rem solid $second-bg-color;
+            transition: 0.5s ease;
+
+            &:hover {
+                border-color: $main-color;
+                transform: scale(1.02);
+            }
+            img {
+                width: 10rem;
+                height: 10rem;
+                border-radius: 2rem;
+                margin: 1rem 0;
+                border: 0.2rem solid var(--second-bg-color);
+                box-shadow: 0 0 1rem var(--second-bg-color);
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
