@@ -309,8 +309,8 @@ nav{
                 height: 10rem;
                 border-radius: 2rem;
                 margin: 1rem 0;
-                border: 0.2rem solid var(--second-bg-color);
-                box-shadow: 0 0 1rem var(--second-bg-color);
+                border: 0.2rem solid $second-bg-color;
+                box-shadow: 0 0 1rem $second-bg-color;
             }
             p {
                 font-size: 1rem;
@@ -363,6 +363,105 @@ nav{
             &:hover {
                 box-shadow: none;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+.header{
+    nav {
+        a {
+            padding: 0.7rem;
+            font-size: 0.8rem;
+        }
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+.home{
+    .home_content {
+        h3 {
+            font-size: 1.5rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .social_media {
+        a {
+            width: 2rem;
+            height: 2rem;
+            font-size: 1rem;
+        }
+    }
+    .btn {
+        padding: 1em 2.8rem;
+        font-size: 1em;
+    }
+}
+
+.heading {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.about{
+    .about_content {
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+            margin: 1rem 0 3rem;
+        }
+    }
+    .text h2 {
+        font-size: 3rem;
+    }
+    .skills {
+        a{
+            img {
+                width: 2rem;
+                height: 2rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.projects{
+    .projects_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.work{
+    .work_container{
+        .work_box {
+            img {
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+    }
+}
+    .contact {
+        form {
+            max-width: 30rem;
+        textarea {
+            font-size: 1.2rem;
+        }
+        .input_box {
+            input {
+                font-size: 1.2rem;
+            }
+        }
+        .btn {
+            padding: 1rem 2.8rem;
+            font-size: 1rem;
+        }
         }
     }
 }
