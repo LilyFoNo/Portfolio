@@ -9,13 +9,13 @@ $second-bg-color: #323946;
     padding: 0;
     box-sizing: border-box;
     font-family:monospace;
-    scroll-behavior: smooth;
     text-decoration: none;
 }
 
 html {
     font-size: 65%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -418,8 +418,10 @@ nav{
             margin: 1rem 0 3rem;
         }
     }
-    .text h2 {
-        font-size: 3rem;
+    .text {
+        h2 {
+            font-size: 4rem;
+        }
     }
     .skills {
         a{
@@ -435,6 +437,13 @@ nav{
     .projects_container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        .projects_box{
+            .project_layer{
+                h4 {
+                    padding-bottom: 6rem;
+                }
+            }
+        }
     }
 }
 .work{
@@ -447,21 +456,127 @@ nav{
         }
     }
 }
-    .contact {
-        form {
-            max-width: 30rem;
-        textarea {
+.contact {
+    form {
+        max-width: 30rem;
+    textarea {
+        font-size: 1.2rem;
+    }
+    .input_box {
+        input {
             font-size: 1.2rem;
         }
-        .input_box {
-            input {
-                font-size: 1.2rem;
-            }
-        }
-        .btn {
-            padding: 1rem 2.8rem;
-            font-size: 1rem;
-        }
+    }
+    .btn {
+        padding: 1rem 2.8rem;
+        font-size: 1rem;
         }
     }
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+.header{
+    nav {
+        a {
+            padding: 1rem;
+            font-size: 1rem;
+        }
+    }
+    .logo{
+        font-size: 2rem;
+    }
+}
+.home{
+    .home_content{
+        h3 {
+            font-size: 2rem;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+    }
+    .social_media {
+        a {
+            width: 2rem;
+            height: 2rem;
+            font-size: 1rem;
+        }
+    }
+    .btn {
+        padding: 1rem 2.8rem;
+        font-size: 1rem;
+    }
+}
+.heading {
+    font-size: 3rem;
+}
+.about{
+    .about_content {
+        h3 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.7vw;
+            margin: 1rem 0 3rem;
+        }
+    }
+    .text {
+        h2 {
+            font-size: 4rem;
+        }
+    }
+    .skills {
+        a{
+            img {
+                width: 2rem;
+                height: 2rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.projects{
+    .projects_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .projects_box{
+            .project_layer{
+                h4 {
+                    padding-bottom: 9rem;
+                }
+            }
+        }
+    }
+}
+.work{
+    .work_container{
+        .work_box {
+            img {
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+    }
+}
+.contact {
+    form {
+        max-width: 40rem;
+    textarea {
+        font-size: 1.4rem;
+    }
+    .input_box {
+        input {
+            font-size: 1.4rem;
+        }
+    }
+    .btn {
+        width: 14rem;
+        font-size: 1rem;
+        }
+    }
+}
 }
