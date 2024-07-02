@@ -281,8 +281,8 @@ nav a:hover span {
   height: 10rem;
   border-radius: 2rem;
   margin: 1rem 0;
-  border: 0.2rem solid var(--second-bg-color);
-  box-shadow: 0 0 1rem var(--second-bg-color);
+  border: 0.2rem solid #323946;
+  box-shadow: 0 0 1rem #323946;
 }
 .work .work_container .work_box p {
   font-size: 1rem;
@@ -332,6 +332,74 @@ nav a:hover span {
 }
 .contact form .btn:hover {
   box-shadow: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .header nav a {
+    padding: 0.7rem;
+    font-size: 0.8rem;
+  }
+  .header .logo {
+    font-size: 1.5rem;
+  }
+  .home .home_content h3 {
+    font-size: 1.5rem;
+  }
+  .home .home_content h1 {
+    font-size: 2rem;
+  }
+  .home .home_content p {
+    font-size: 1rem;
+  }
+  .home .social_media a {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .home .btn {
+    padding: 1em 2.8rem;
+    font-size: 1em;
+  }
+  .heading {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .about .about_content h3 {
+    font-size: 1.5rem;
+  }
+  .about .about_content p {
+    font-size: 1rem;
+    margin: 1rem 0 3rem;
+  }
+  .about .text h2 {
+    font-size: 3rem;
+  }
+  .about .skills a img {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .projects .projects_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work .work_container .work_box img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .contact form {
+    max-width: 30rem;
+  }
+  .contact form textarea {
+    font-size: 1.2rem;
+  }
+  .contact form .input_box input {
+    font-size: 1.2rem;
+  }
+  .contact form .btn {
+    padding: 1rem 2.8rem;
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
