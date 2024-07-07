@@ -97,7 +97,7 @@ nav a:hover span {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.5;
-  text-shadow: 3px 3px 3px #551A8B;
+  text-shadow: 3px 3px 3px #551a8b;
 }
 .home .home_content p {
   font-size: 1.6rem;
@@ -150,7 +150,7 @@ nav a:hover span {
   margin-top: 0.5rem;
   text-align: center;
   font-size: 4rem;
-  text-shadow: 3px 3px 3px #551A8B;
+  text-shadow: 3px 3px 3px #551a8b;
 }
 
 .about_content h2 {
@@ -172,7 +172,7 @@ nav a:hover span {
   writing-mode: vertical-lr;
   text-orientation: upright;
   font-size: 4.5rem;
-  text-shadow: 3px 3px 3px #551A8B;
+  text-shadow: 3px 3px 3px #551a8b;
 }
 
 .skills a {
@@ -242,12 +242,8 @@ nav a:hover span {
   padding-bottom: 7rem;
   font-size: 1rem;
 }
-.projects .projects_container .projects_box .project_layer p {
-  font-size: 1.6rem;
-  margin: 0.3rem 0 1rem;
-}
 .projects .projects_container .projects_box:hover .project_layer {
-  transform: translateY(70%);
+  transform: translateY(72%);
 }
 
 .work {
@@ -335,44 +331,89 @@ nav a:hover span {
 }
 
 @media only screen and (max-width: 480px) {
+  .header nav {
+    width: 95vw;
+  }
   .header nav a {
-    padding: 0.7rem;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
+    padding-left: 0;
   }
   .header .logo {
-    font-size: 1.5rem;
+    display: none;
+  }
+  .home {
+    display: list-item;
+    position: relative;
+  }
+  .home .home_img img {
+    width: 45vw;
+    border-radius: 0%;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    position: absolute;
+    top: 9vh;
+    left: 30vw;
   }
   .home .home_content h3 {
-    font-size: 1.5rem;
+    font-size: 4vh;
+    position: relative;
+    top: 30vh;
   }
   .home .home_content h1 {
-    font-size: 2rem;
+    font-size: 5vh;
+    position: relative;
+    top: 30vh;
   }
   .home .home_content p {
-    font-size: 1rem;
+    font-size: 6vw;
+    position: relative;
+    top: 33vh;
   }
   .home .social_media a {
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     font-size: 1rem;
+    position: relative;
+    bottom: -35vh;
+    right: -35vw;
   }
   .home .btn {
-    padding: 1em 2.8rem;
-    font-size: 1em;
+    display: none;
   }
   .heading {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 5vh;
+  }
+  .about {
+    display: block;
+    position: relative;
+  }
+  .about .about_content {
+    position: absolute;
+    top: 1vw;
+    padding-right: 5vw;
+    padding-top: 7vw;
   }
   .about .about_content h3 {
-    font-size: 1.5rem;
+    font-size: 7vw;
   }
   .about .about_content p {
-    font-size: 1rem;
+    font-size: 4vw;
     margin: 1rem 0 3rem;
   }
   .about .text h2 {
-    font-size: 4rem;
+    font-size: 5vh;
+    position: relative;
+    top: 97vw;
+    left: 25vw;
+  }
+  .about .skills {
+    position: relative;
+    top: 21vh;
+    left: 45vw;
+  }
+  .about .skills a {
+    width: 5vh;
+    height: 5vh;
   }
   .about .skills a img {
     width: 2rem;
@@ -381,17 +422,36 @@ nav a:hover span {
   }
   .projects .projects_container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .projects .projects_container .projects_box .project_layer h4 {
-    padding-bottom: 6rem;
+    padding-bottom: 10.5rem;
+    font-weight: 700;
+  }
+  .work .work_container {
+    display: list-item;
+    width: 15rem;
+    height: 15rem;
+  }
+  .work .work_container div:nth-child(2) {
+    position: relative;
+    left: 20rem;
   }
   .work .work_container .work_box img {
     width: 7rem;
     height: 7rem;
   }
+  .contact {
+    display: flex;
+  }
+  .contact h2 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
   .contact form {
     max-width: 30rem;
+    position: relative;
+    top: 20vh;
   }
   .contact form textarea {
     font-size: 1.2rem;
@@ -472,6 +532,4 @@ nav a:hover span {
     width: 14rem;
     font-size: 1rem;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
