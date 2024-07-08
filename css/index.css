@@ -39,7 +39,7 @@ span {
   z-index: 100;
 }
 .header .logo {
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   color: #fff;
   font-weight: 500;
   cursor: default;
@@ -50,12 +50,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 7rem;
 }
 nav a {
   color: var(--text-color);
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.5vw;
   position: relative;
   padding: 0.6rem 1.5rem;
   transition: 0.5s;
@@ -89,30 +89,29 @@ nav a:hover span {
   border-radius: 50%;
 }
 .home .home_content h3 {
-  font-size: 2.5rem;
+  font-size: 3vw;
   font-weight: 700;
-  padding-top: 1rem;
 }
 .home .home_content h1 {
-  font-size: 4rem;
+  font-size: 5vw;
   font-weight: 700;
   line-height: 1.5;
   text-shadow: 3px 3px 3px #551a8b;
 }
 .home .home_content p {
-  font-size: 1.6rem;
+  font-size: 2vw;
   text-align: justify;
 }
 .home .social_media a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 4vw;
+  height: 4vw;
   background: transparent;
   border: 0.2rem solid #0ef;
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 2vw;
   color: #0ef;
   margin: 2rem 1.5rem 2rem 0;
   transition: 0.5s ease;
@@ -124,11 +123,12 @@ nav a:hover span {
 }
 .home .btn {
   display: inline-block;
+  margin-top: 3rem;
   padding: 1rem 2.8rem;
   background: #0ef;
   border-radius: 4rem;
   box-shadow: 0 0 1rem #0ef;
-  font-size: 1.6rem;
+  font-size: 2vw;
   color: #323946;
   letter-spacing: 0.1rem;
   font-weight: 600;
@@ -138,6 +138,13 @@ nav a:hover span {
   box-shadow: none;
 }
 
+.heading {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 5vw;
+  text-shadow: 3px 3px 3px #551a8b;
+}
+
 .about {
   background-color: #323946;
   display: flex;
@@ -145,58 +152,48 @@ nav a:hover span {
   align-items: center;
   gap: 5rem;
 }
-
-.heading {
-  margin-top: 0.5rem;
-  text-align: center;
-  font-size: 4rem;
-  text-shadow: 3px 3px 3px #551a8b;
-}
-
-.about_content h2 {
+.about .about_content h2 {
   text-align: left;
   line-height: 1.2;
 }
-.about_content h3 {
-  font-size: 2.6rem;
+.about .about_content h3 {
+  font-size: 3vw;
   padding-top: 1rem;
+  text-shadow: 3px 3px 3px #551a8b;
 }
-.about_content p {
-  font-size: 1.6rem;
+.about .about_content p {
+  font-size: 2vw;
   margin: 2rem 0 3rem;
   text-align: justify;
 }
-
-.text h2 {
-  font-size: 2.6rem;
+.about .text h2 {
+  font-size: 4.5vw;
   writing-mode: vertical-lr;
   text-orientation: upright;
-  font-size: 4.5rem;
   text-shadow: 3px 3px 3px #551a8b;
 }
-
-.skills a {
+.about .skills a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 4vw;
+  height: 4vw;
   background: transparent;
   border: 0.2rem solid #0ef;
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 2vw;
   color: #0ef;
   margin: 1rem 0 1rem 0;
   transition: 0.5s ease;
 }
-.skills a:hover {
+.about .skills a:hover {
   background: #0ef;
   color: #323946;
   box-shadow: 0 0 1rem #0ef;
 }
-.skills img {
-  width: 3.5rem;
-  height: 3.5rem;
+.about .skills img {
+  width: 3vw;
+  height: 3vw;
 }
 
 .projects h2 {
@@ -204,9 +201,9 @@ nav a:hover span {
 }
 .projects .projects_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 .projects .projects_container .projects_box {
   position: relative;
@@ -224,26 +221,27 @@ nav a:hover span {
 }
 .projects .projects_container .projects_box .project_layer {
   position: absolute;
-  bottom: 0;
+  top: 1rem;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+  background: linear-gradient(#0ef, rgba(0, 0, 0, 0.1));
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   padding: 0 4rem;
-  transform: translateY(100%);
+  transform: translateY(-100%);
   transition: 0.5s ease;
 }
 .projects .projects_container .projects_box .project_layer h4 {
-  padding-bottom: 7rem;
-  font-size: 1rem;
+  padding-top: 20rem;
+  font-size: 3rem;
+  color: #1f242d;
 }
 .projects .projects_container .projects_box:hover .project_layer {
-  transform: translateY(72%);
+  transform: translateY(-72%);
 }
 
 .work {
@@ -260,6 +258,8 @@ nav a:hover span {
 }
 .work .work_container .work_box {
   margin-top: 2rem;
+  width: 20vw;
+  height: 20vw;
   box-shadow: 0 0 1rem #1f242d;
   background: #1f242d;
   padding: 2rem 2rem 2rem;
@@ -272,16 +272,19 @@ nav a:hover span {
   border-color: #0ef;
   transform: scale(1.02);
 }
+.work .work_container .work_box h2 {
+  font-size: 3rem;
+}
 .work .work_container .work_box img {
-  width: 10rem;
-  height: 10rem;
+  width: 10vw;
+  height: 10vw;
   border-radius: 2rem;
   margin: 1rem 0;
   border: 0.2rem solid #323946;
   box-shadow: 0 0 1rem #323946;
 }
 .work .work_container .work_box p {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .contact form {
@@ -310,7 +313,7 @@ nav a:hover span {
 }
 .contact form textarea {
   resize: none;
-  height: 50%;
+  height: 50vh;
 }
 .contact form .btn {
   display: inline-block;
