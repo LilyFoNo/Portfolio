@@ -21,6 +21,7 @@ html {
 body {
   background-color: $bg-color;
   color: $text-color;
+  overflow-x: hidden;
 }
 
 section {
@@ -269,6 +270,7 @@ nav {
           padding-top: 20rem;
           font-size: 3rem;
           color: $bg-color;
+          font-weight: bolder;
         }
       }
       &:hover .project_layer {
@@ -442,7 +444,7 @@ nav {
   }
 
   .heading {
-    margin-top: 1rem;
+    margin-top: 5rem;
     font-size: 5vh;
   }
   .about {
@@ -465,21 +467,25 @@ nav {
       h2 {
         font-size: 5vh;
         position: relative;
-        top: 97vw;
+        top: 60vh;
         left: 25vw;
+        writing-mode: horizontal-tb;
       }
     }
     .skills {
       position: relative;
-      top: 21vh;
-      left: 45vw;
+      top: 60vh;
+      left: 15vw;
       a {
         width: 5vh;
         height: 5vh;
+        display: inline-flex;
+        font-size: 3rem;
+
         img {
-          width: 2rem;
-          height: 2rem;
-          font-size: 1rem;
+          width: 3rem;
+          height: 3rem;
+
         }
       }
     }
@@ -491,8 +497,8 @@ nav {
       .projects_box {
         .project_layer {
           h4 {
-            padding-bottom: 10.5rem;
-            font-weight: 700;
+            padding-top: 10rem;
+            font-size: 2rem;
           }
         }
       }
@@ -500,17 +506,20 @@ nav {
   }
   .work {
     .work_container {
-      display: list-item;
-      width: 15rem;
-      height: 15rem;
+      display: block;
       div:nth-child(2) {
         position: relative;
-        left: 20rem;
+        left: 40vw;
       }
       .work_box {
+        width: 20rem;
+        height: 20rem;
         img {
           width: 7rem;
           height: 7rem;
+        }
+        h2 {
+          font-size: 2.5rem;
         }
       }
     }
@@ -629,7 +638,8 @@ nav {
       .projects_box {
         .project_layer {
           h4 {
-            padding-bottom: 9rem;
+            padding-top: 7rem;
+            font-size: 1.5rem;
           }
         }
       }
@@ -637,7 +647,7 @@ nav {
   }
   .work {
     .work_container {
-      display: list-item;
+      display: block;
       .work_box {
         width: 40vw;
         height: 40vw;
